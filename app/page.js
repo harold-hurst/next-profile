@@ -1,10 +1,13 @@
+// Image component provided by next
 import Image from "next/image";
+// styles
 import styles from "./page.module.css";
 
+// home component
 export default function Home() {
   return (
     <div className={styles.page}>
-      <main className={styles.main}>
+      <main className={styles.main} style={{border: "1px solid red"}}>
         <Image
           className={styles.logo}
           src="/next.svg"
