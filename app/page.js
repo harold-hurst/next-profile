@@ -1,14 +1,15 @@
 // Image component provided by next
 import Image from "next/image";
-// styles
+
+// locally scoped styles for home page component
 import styles from "./page.module.css";
 
 // home component
 export default function Home() {
   return (
-    <div className={styles.page} style={{ border: "3px solid yellow" }}>
+    <div className={styles.page}>
       <div className={styles.flex_container}>
-        <header style={{ border: "3px solid red" }}>
+        <header>
           <div>
             <h1>
               <a href="/">Harry Hurst</a>
