@@ -7,18 +7,18 @@ import styles from "./page.module.css";
 export default function Home() {
   return (
     <div className={styles.page} style={{ border: "3px solid yellow" }}>
-      <div class={styles.flex_container}>
+      <div className={styles.flex_container}>
         <header style={{ border: "3px solid red" }}>
           <div>
             <h1>
               <a href="/">Harry Hurst</a>
             </h1>
-            <h2 style={{ marginTop: "0.75rem" }}>Front End Developer</h2>
-            <p>
+            <h2 className="mt-3"> Front End Developer</h2>
+            <p className="mt-4">
               I build accessible, pixel-perfect digital experiences for the web.
             </p>
             <nav aria-label="">
-              <ul>
+              <ul className="mt-16 w-max">
                 <li>
                   <a href="/about">
                     <span>About</span>
@@ -39,6 +39,34 @@ export default function Home() {
           </div>
         </header>
         <main className={styles.main} style={{ border: "1px solid blue" }}>
+          <div>
+            <p className="mb-4">
+              A passionate and driven web developer, competent in modern web
+              technologies including popular frameworks and content management
+              systems. I thrive on building clean, responsive, and accessible
+              front-end content. With an eye for good digital designs and a deep
+              understanding of web/browser architecture, I am able to contribute
+              both to technical and aesthetic aspects of front-end development.
+            </p>
+            <p className="mb-4">
+              Having worked in the web development team for a large financial
+              organisation as well as on my own personal JavaScript projects, I
+              have a breadth of competencies and am always looking to further
+              expand my skill-base.
+            </p>
+            <p className="mb-4">
+              I adhere to best practices in order to maintain readable, scalable
+              and secure code bases. I enjoy working collaboratively as well as
+              independently on tasks and constantly keep up to date with new
+              digital trends.
+            </p>
+          </div>
+        </main>
+
+        {/* 
+
+          Original content from Next.js
+          
           <Image
             className={styles.logo}
             src="/next.svg"
@@ -79,7 +107,7 @@ export default function Home() {
               Read our docs
             </a>
           </div>
-        </main>
+        </main> */}
       </div>
       <footer className={styles.footer} style={{ border: "3px solid green" }}>
         <a

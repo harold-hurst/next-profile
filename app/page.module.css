@@ -2,22 +2,17 @@
   --gray-rgb: 0, 0, 0;
   --gray-alpha-200: rgba(var(--gray-rgb), 0.08);
   --gray-alpha-100: rgba(var(--gray-rgb), 0.05);
-
   --button-primary-hover: #383838;
   --button-secondary-hover: #f2f2f2;
-
-  /* display: grid;
-  grid-template-rows: 20px 1fr 20px;
-  align-items: center;
-  justify-items: center; */
   min-height: 100svh;
   padding: 80px;
   gap: 64px;
-  font-family: var(--font-geist-sans);
 
   background-color: rgb(15 23 42);
   color: rgb(210, 216, 223);
 }
+
+/* background: radial-gradient(600px at 452px 393px, rgba(29, 78, 216, 0.15), transparent 80%); */
 
 @media (prefers-color-scheme: dark) {
   .page {
@@ -59,10 +54,13 @@
   font-weight: 600;
 }
 
-/* remove .ctas soon */
-.ctas, .flex_container {
+.flex_container {
   display: flex;
-  gap: 20px;
+  gap: 1rempx;
+}
+
+.flex_container > header, .flex_container > main {
+  flex: 1;
 }
 
 .ctas a {
@@ -130,6 +128,12 @@ a.secondary {
   }
 }
 
+@media (max-width: 1025px) {
+  .flex_container {
+    flex-direction: column;
+  }
+}
+
 @media (max-width: 600px) {
   .page {
     padding: 32px;
@@ -144,7 +148,7 @@ a.secondary {
     text-align: center;
   }
 
-  .ctas, .flex_container {
+  .ctas {
     flex-direction: column;
   }
 
