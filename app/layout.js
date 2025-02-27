@@ -1,8 +1,7 @@
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import "./tailwind.css"
 
-import { inter } from '@/app/ui/fonts';
+import { lusitana } from '@/app/ui/fonts';
 
 export const metadata = {
   title: "Harry Hurst",
@@ -12,7 +11,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${inter.className}`}>
+      <body className={`${lusitana.className}`}>
         {children}
       </body>
     </html>
