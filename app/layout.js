@@ -1,7 +1,7 @@
 import "./globals.css";
 import "./tailwind.css"
 
-import { inter } from '@/app/ui/fonts';
+import { outfit } from '@/app/ui/fonts';
 
 export const metadata = {
   title: "Harry Hurst",
@@ -11,7 +11,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${inter.className}`}>
+      <body className={`${outfit.className}`}>
         {children}
       </body>
     </html>
