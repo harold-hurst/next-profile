@@ -1,28 +1,17 @@
 .page {
-  --gray-rgb: 0, 0, 0;
-  --gray-alpha-200: rgba(var(--gray-rgb), 0.08);
-  --gray-alpha-100: rgba(var(--gray-rgb), 0.05);
-  --button-primary-hover: #383838;
-  --button-secondary-hover: #f2f2f2;
+
+  /* min-height: 100svh ensures that the element's height will always be at least
+  as tall as the smallest dimension of the viewport. So, if the viewport is in a
+  portrait or landscape orientation, the element will adapt to the smaller side. */
   min-height: 100svh;
+
+  /* universal padding */
+
   padding: 80px;
-  gap: 64px;
 
-  background-color: rgb(15 23 42);
+
+  background-color: #16254f;
   color: rgb(210, 216, 223);
-}
-
-/* background: radial-gradient(600px at 452px 393px, rgba(29, 78, 216, 0.15), transparent 80%); */
-
-@media (prefers-color-scheme: dark) {
-  .page {
-    --gray-rgb: 255, 255, 255;
-    --gray-alpha-200: rgba(var(--gray-rgb), 0.145);
-    --gray-alpha-100: rgba(var(--gray-rgb), 0.06);
-
-    --button-primary-hover: #ccc;
-    --button-secondary-hover: #1a1a1a;
-  }
 }
 
 .main {

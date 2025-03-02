@@ -1,9 +1,10 @@
+// Next.js also provides fonts in the ui component folder
 import { inter } from '@/app/ui/fonts';
 
-// Image component provided by next
-import Image from "next/image";
+// Image component provided by next - stops CLS, does lazy loading etc.
+// import Image from "next/image";
 
-// locally scoped styles for home page component
+// style modules means that styles are locally scoped to this component - more performant as styling only needs to be applied to relevant component.
 import styles from "./page.module.css";
 
 // home component
@@ -13,13 +14,17 @@ export default function Home() {
       <div className={`{styles.flex_container} mx-auto max-w-screen-xl`}>
         <header>
           <div>
+
             <h1 className={`${inter.className}`}>
               <a href="/">Harry Hurst</a>
             </h1>
+
             <h2 className="mt-3"> Front End Developer</h2>
+
             <p className="mt-4">
               I build accessible, pixel-perfect digital experiences for the web.
             </p>
+
             <nav aria-label="">
               <ul className="mt-16 w-max">
                 <li>
@@ -39,6 +44,7 @@ export default function Home() {
                 </li>
               </ul>
             </nav>
+
           </div>
         </header>
         <main className={styles.main}>
@@ -67,7 +73,7 @@ export default function Home() {
         </main>
 
         <footer className={styles.footer}>
-          <a
+          {/* <a
             href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
             target="_blank"
             rel="noopener noreferrer"
@@ -108,7 +114,7 @@ export default function Home() {
               height={16}
             />
             Go to nextjs.org →
-          </a>
+          </a> */}
         </footer>
       </div>
     </div>
