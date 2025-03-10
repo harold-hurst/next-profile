@@ -1,7 +1,8 @@
 // Next.js also provides fonts in the ui component folder
 import { inter } from '@/app/ui/fonts';
-import Footer from './footer';
-import PointerShadow from './pointerShadow';
+
+import Footer from '../components/footer';
+import PointerShadow from '../components/pointerShadow';
 
 // Image component provided by next - stops CLS, does lazy loading etc.
 // import Image from "next/image";
