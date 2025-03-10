@@ -1,5 +1,7 @@
 // Next.js also provides fonts in the ui component folder
 import { inter } from '@/app/ui/fonts';
+import Footer from './footer';
+import PointerShadow from './pointerShadow';
 
 // Image component provided by next - stops CLS, does lazy loading etc.
 // import Image from "next/image";
@@ -11,6 +13,7 @@ import pageStyles from "./page.module.css";
 export default function Home() {
   return (
     <div className={pageStyles.page}>
+      <PointerShadow />
       <div className="mx-auto max-w-screen-xl">
         <div className={pageStyles.flexContainer}>
           <header className={pageStyles.header}>
@@ -69,6 +72,7 @@ export default function Home() {
               </p>
             </div>
           </main>
+          <Footer />
         </div>
       </div>
     </div>
