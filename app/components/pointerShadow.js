@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 
-const PointerShadow = () => {
+export default function PointerShadow() {
 
   const [position, setPosition] = useState({ x: 0, y: 0 });
 
@@ -25,5 +25,3 @@ const PointerShadow = () => {
     />
   )
 }
-
-export default PointerShadow;
