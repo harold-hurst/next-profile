@@ -51,7 +51,8 @@ export default function Home() {
             </div>
           </header>
           <main className={pageStyles.main}>
-            <div>
+            {/* About */}
+            <section>
               <p className="mb-4">
                 A passionate and dedicated developer, skilled in building static
                 and dynamic front-end web services. Knowledge and practical
@@ -97,7 +98,24 @@ export default function Home() {
                 nulla pariatur. Excepteur sint occaecat cupidatat non proident,
                 sunt in culpa qui officia deserunt mollit anim id est laborum."
               </p>
-            </div>
+            </section>
+            {/* Experience */}
+            <section>
+              <div>
+                <ol>
+                  <li className="mb-12">
+                    <div className={pageStyles.gridItem}>
+                      <div
+                        className={`${pageStyles.hoverBox} rounded-md`}
+                      ></div>
+                      Experience
+                    </div>
+                  </li>
+                </ol>
+              </div>
+            </section>
+            {/* Projects */}
+            <section></section>
           </main>
         </div>
       </div>
